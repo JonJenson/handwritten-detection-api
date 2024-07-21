@@ -53,4 +53,6 @@ def upload_file():
         return jsonify({"text": text})
     else:
         return jsonify({"error": "Invalid file format. Allowed formats are: png, jpg, jpeg, gif"}), 400
+if __name__ == '__main__':
+    app.run(debug=True)
 
