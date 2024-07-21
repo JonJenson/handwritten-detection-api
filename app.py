@@ -30,7 +30,7 @@ def ocr(image):
     return generated_text
 
 #test-endpoint
-@app.route("/api" , methods=["GET"])
+@app.route("/" , methods=["GET"])
 def get_method():
     return jsonify({"msg" : "working ..."})
 
